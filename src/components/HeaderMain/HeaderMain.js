@@ -1,11 +1,12 @@
 import React from 'react';
 
-const HeaderMainj = () => {
+
+const HeaderMain = () => {
 	return (
 		<div>
-			
+
 		</div>
 	);
 };
 
-export default HeaderMainj;
+export default HeaderMain;
