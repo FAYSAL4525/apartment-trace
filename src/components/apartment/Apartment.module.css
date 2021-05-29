@@ -1,0 +1,16 @@
+.apartmentContainer{
+background-image: url("../../assets/images/featured-bg.jpg");
+background-attachment: fixed;
+background-size: cover;
+width:100%;
+padding-top: 50px;
+padding-bottom: 50px;
+align-items: center;
+}
+.apartmentContainer h1,p,hr{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0!important;
+	margin-bottom: 0!important;
+	color: white;
+}
