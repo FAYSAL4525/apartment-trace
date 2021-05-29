@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import styles from './Navbar.module.css'
 
 const Navbar = () => {
 	return (
@@ -20,11 +22,19 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div className="navbar-nav ms-auto">
-              <a className="nav-link active" aria-current="page" href="#">
+            <div className={`navbar-nav ms-auto ${styles.navlink}`}>
+              <NavLink activeStyle={{color:'green'}} to="/">
                 Home
-              </a>
-              <a className="nav-link" href="#">
+              </NavLink>
+              <NavLink to="/">About</NavLink>
+              <NavLink to="/">Service</NavLink>
+              <NavLink to="/">Concerns</NavLink>
+              <NavLink to="/">Contact</NavLink>
+
+              {/* <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a> */}
+              {/* <a className="nav-link" href="#">
                 Features
               </a>
               <a className="nav-link" href="#">
@@ -37,7 +47,7 @@ const Navbar = () => {
                 aria-disabled="true"
               >
                 Disabled
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
