@@ -10,7 +10,6 @@ const Apartment = () => {
       setApartmentInfo(apartmentData);
 		}, []);
 	
-    console.log(apartmentData);
 	return (
     <>
       <div className={styles.apartmentContainer}>
@@ -21,8 +20,8 @@ const Apartment = () => {
             <h1>FEATURED OFFERS</h1>
           </div>
           <hr />
-          {apartmentInfo.map((apInfo) => (
-            <ApartmentInfo apInfo={apInfo} />
+          {apartmentInfo.map((apInfo,index) => (
+						<ApartmentInfo key={index } apInfo={apInfo} />
           ))}
         </div>
       </div>

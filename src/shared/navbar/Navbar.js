@@ -1,15 +1,18 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import styles from './Navbar.module.css'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-	return (
+  return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light container-fluid">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <h2 className="navbar-brand fs-3 text-success">
+            <FontAwesomeIcon icon={faHome} size="2x" />
+            APARTMENT TRACE
+          </h2>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,31 +26,13 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div className={`navbar-nav ms-auto ${styles.navlink}`}>
-              <NavLink activeStyle={{color:'green'}} to="/">
+              <NavLink activeStyle={{ color: "green" }} to="/">
                 Home
               </NavLink>
               <NavLink to="/">About</NavLink>
               <NavLink to="/">Service</NavLink>
               <NavLink to="/">Concerns</NavLink>
               <NavLink to="/">Contact</NavLink>
-
-              {/* <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a> */}
-              {/* <a className="nav-link" href="#">
-                Features
-              </a>
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-              <a
-                className="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
-              </a> */}
             </div>
           </div>
         </div>

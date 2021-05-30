@@ -21,8 +21,8 @@ const Services = () => {
             We're an agency tailored to all clients' needs that always delivers
           </h1>
         </div>
-        {servicesInfo.map((srvInfo) => (
-          <ServicesDetail servicesInfo={srvInfo} />
+        {servicesInfo.map((srvInfo,index) => (
+					<ServicesDetail key={index} servicesInfo={srvInfo} />
         ))}
       </div>
     </>
