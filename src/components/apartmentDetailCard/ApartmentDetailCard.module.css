@@ -1,0 +1,14 @@
+.apartmentDetailDiv {
+  height: 450px;
+  width: 100%;
+	background-image: linear-gradient(rgba(5, 0, 0,0.6), rgba(5, 0, 0,0.6));
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.apartmentDetailDiv h1{
+		color:rgb(16, 151, 83);
+}
+.aprtDetailsHeading{
+	margin-left: -45px;
+}

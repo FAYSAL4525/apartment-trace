@@ -1,11 +1,17 @@
-.mySwiper{
-	width: 100%;
-  height: 450px;
+.mySwiper {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 3px;
 }
 .swiper-container {
   width: 100%;
 }
-
+.mySwiper img {
+  height: 100%;
+}
+.mySwiper2 img {
+  height: 100%;
+}
 .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -14,7 +20,12 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-	height: 100%;
-	background-size: cover;
+  /* height: 100%; */
+  background-size: cover;
 }
 
+.mySwiper2 {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 3px;
+}

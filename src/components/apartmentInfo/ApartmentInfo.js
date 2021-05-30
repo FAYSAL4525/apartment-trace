@@ -1,18 +1,17 @@
 // import React from 'react';
 import { useRef } from "react";
-import Flippy, { FrontSide, BackSide } from "react-flippy";
+import Flippy, { BackSide, FrontSide } from "react-flippy";
 import { Link } from "react-router-dom";
 import areaIcon from "../../assets/icon/area-icon.png";
-import bedIcon from "../../assets/icon/rooms-icon.png";
 import bathIcon from "../../assets/icon/bathrooms-icon.png";
 import locatinIcon from "../../assets/icon/location.png";
+import bedIcon from "../../assets/icon/rooms-icon.png";
 // import Flippy, { FrontSide, BackSide } from "react-flippy";
 import styles from "./ApartmentInfo.module.css";
 
 const ApartmentInfo = ({ apInfo }) => {
   const { id, name, img, area, location, room, bathrooms, details, price } =
     apInfo;
-  console.log(apInfo);
   const ref = useRef();
   return (
     <>
@@ -72,9 +71,11 @@ const ApartmentInfo = ({ apInfo }) => {
                 className={styles.flippyBackSide}
                 animationDuration={1500}
               >
-                <button className={`btn btn-primary ${styles.apartmentBtn}`}>
-                  <Link to={`/apartment/${id}`}> Explore</Link>
-                </button>
+                <Link to={`/apartment/${id}`}>
+                  <button className={`btn btn-primary ${styles.apartmentBtn}`}>
+                    Explore
+                  </button>
+                </Link>
               </BackSide>
             </div>
           </Flippy>
