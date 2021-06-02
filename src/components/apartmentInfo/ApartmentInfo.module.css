@@ -13,10 +13,16 @@
 .apartmentInfoContainer img {
   height: 250px;
 }
-.flippyFontSide,
-.flippyBackSide {
+.flippyFontSide {
   padding: 0;
-  background: white;
+	height:100%;
+  background-color: white;
+	box-sizing: border-box;
+}
+.flippyBackSide{
+	height:100%;
+	background-color: white;
+	box-sizing: border-box;
 }
 .apartmentBtn {
   text-decoration: none;
@@ -30,11 +36,11 @@
 }
 .apartmentCartHeader {
   padding: 13px;
+	background-color: white;
 }
 .apartmentCartHeader img {
-  margin-top: -3px;
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 17px; 
   padding-right: 5px;
 }
 .apartmentCartHeader h4,
@@ -45,22 +51,22 @@ h6 {
 .apartmentCartHeader p {
   color: dimgray;
 }
-/* .apartmentCartFooter {
-  display: flex;
-  justify-content: space-between;
-} */
 .apartmentCartFooterBg1 {
-  padding: 13px;
   background: #1b2835;
   color: white;
+	height:100%;
+	box-sizing: border-box;
+	padding:13px;
 }
 .apartmentCartFooterBg1 img {
   padding-right: 5px;
-  height: 17px;
-  width: 23px;
+  height: 15px;
+  width: 15px;
 }
 .apartmentCartFooterBg2 {
-  padding: 13px;
   background: #0872dd;
   color: white;
+	height:100%;
+	box-sizing: border-box;
+	padding:13px;
 }

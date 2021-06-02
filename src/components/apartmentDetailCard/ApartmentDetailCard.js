@@ -1,26 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./ApartmentDetailCard.module.css";
-import { useParams } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { apartmentData } from "../../fakeData/fakeData";
 import ApartmentServices from "../apartmentServices/ApartmentServices";
 import ContactForm from "../ContactForm/ContactForm";
+import { useSelector } from "react-redux";
 
 const ApartmentDetailCard = () => {
-  const { id } = useParams();
-  const [apartmentMaterials, setApartmentMaterials] = useState([]);
-
-
-  useEffect(() => {
-    setApartmentMaterials(apartmentData);
-  }, []);
-  // console.log(apartmentMaterials);
-
-  const Info = apartmentMaterials.find((info) => info.id == id);
-  // console.log(id);
-
-	console.log(Info?.service.airCondition);
+	const Info = useSelector(state => {
+		return state.apartments.apartmentDetail[0];
+})
 
   return (
     <>

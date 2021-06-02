@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { apartmentData } from "../../fakeData/fakeData";
+import React from 'react';
+import { useSelector } from 'react-redux';
 import ApartmentInfo from '../apartmentInfo/ApartmentInfo';
 import styles from "./Apartment.module.css";
 
 const Apartment = () => {
-
-		const [apartmentInfo, setApartmentInfo] = useState([]);
-    useEffect(() => {
-      setApartmentInfo(apartmentData);
-		}, []);
-	
+	const apartmentInfo = useSelector((state) => {
+		return state.apartments.apartmentList;
+	})
 	return (
     <>
       <div className={styles.apartmentContainer}>
@@ -20,7 +17,7 @@ const Apartment = () => {
             <h1>FEATURED OFFERS</h1>
           </div>
           <hr />
-          {apartmentInfo.map((apInfo,index) => (
+          {apartmentInfo?.map((apInfo,index) => (
 						<ApartmentInfo key={index } apInfo={apInfo} />
           ))}
         </div>

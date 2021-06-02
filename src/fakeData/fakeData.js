@@ -23,7 +23,7 @@ const apartmentData = [
     room: 3,
     bathrooms: 1,
     parkingPlaces: 2,
-    price: 600,
+    price: 194,
     service: [
       { airCondition: "Air Condition" },
       { internet: "Internet" },
@@ -41,14 +41,14 @@ const apartmentData = [
   },
   {
     id: 2,
-    name: "Washington Avenue",
+    name: "Family Apartmet Three",
     img: apartmentImg2,
     area: "54m",
     location: "Nsirabad H/s, Chattogram",
     bathrooms: 1,
     room: 3,
     parkingPlaces: 2,
-    price: 600,
+    price: 356,
     service: [
       { airCondition: "Air Condition" },
       { internet: "Internet" },
@@ -66,14 +66,14 @@ const apartmentData = [
   },
   {
     id: 3,
-    name: "Washington Avenue",
+    name: "Gorgeous house",
     img: apartmentImg3,
     area: "54m",
     location: "Nsirabad H/s, Chattogram",
     bathrooms: 1,
     room: 3,
     parkingPlaces: 2,
-    price: 600,
+    price: 256,
     service: [
       { airCondition: "Air Condition" },
       { internet: "Internet" },
@@ -91,7 +91,7 @@ const apartmentData = [
   },
   {
     id: 4,
-    name: "Washington Avenue",
+    name: "Luxury villa",
     img: apartmentImg4,
     area: "54m",
     location: "Nsirabad H/s, Chattogram",
@@ -116,14 +116,14 @@ const apartmentData = [
   },
   {
     id: 5,
-    name: "Washington Avenue",
+    name: "Epic Huda Palacio",
     img: apartmentImg5,
     area: "54m",
     location: "Nsirabad H/s, Chattogram",
     bathrooms: 1,
     room: 3,
     parkingPlaces: 2,
-    price: 600,
+    price: 536,
     service: [
       { airCondition: "Air Condition" },
       { internet: "Internet" },
