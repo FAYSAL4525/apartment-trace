@@ -1,0 +1,35 @@
+.flippy-container *
+{
+    box-sizing: border-box;
+		border:none;
+		box-shadow: none;
+}
+
+.flippy-cardContainer-wrapper
+{
+	position: relative;
+	height: 100%;
+  width: 100%;
+	border:0;
+}
+
+.flippy-cardContainer
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    -webkit-transition: .6s;
+       -moz-transition: .6s;
+        -ms-transition: .6s;
+         -o-transition: .6s;
+            transition: .6s;
+    -moz-transform: perspective(1000px);
+         transform: perspective(1000px);
+
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
