@@ -5,6 +5,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import ApartmentServices from "../apartmentServices/ApartmentServices";
 import ContactForm from "../ContactForm/ContactForm";
 import { useSelector } from "react-redux";
+import Footer from "../../shared/footer/Footer";
 
 const ApartmentDetailCard = () => {
 	const Info = useSelector(state => {
@@ -82,7 +83,8 @@ const ApartmentDetailCard = () => {
 				<div>
 					<ContactForm/>
 				</div>
-      </div>
+			</div>
+			<Footer/>
     </>
   );
 };
